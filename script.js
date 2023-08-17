@@ -15,8 +15,10 @@ const instructionElement = document.getElementById("instruction");
 const resultElement = document.getElementById("result");
 var muz = new Audio();
 var szmak = new Audio();
-muz.src = "./pir.mp3";
-szmak.src = "./sss.mp3";
+muz.src =
+  "https://cdn.jsdelivr.net/gh/sergsem72/piramida@4e6116aad9fb01d5f4ca730c3d7daaf0237c79cd/pir.mp3";
+szmak.src =
+  "https://cdn.jsdelivr.net/gh/sergsem72/piramida@4e6116aad9fb01d5f4ca730c3d7daaf0237c79cd/sss.mp3";
 
 // функция добавления нового слоя
 function addLayer(x, z, width, depth, direction) {
