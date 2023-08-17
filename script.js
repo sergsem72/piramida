@@ -70,7 +70,9 @@ function cutBox(topLayer, overlap, size, delta) {
 
   //обновляем верхний блок в THREEJS
   topLayer.threejs.scale[direction] = overlap / size;
-  topLayer.threejs.position[direction] = delta / 2;
+  topLayer.threejs.position[direction] -= delta / 2;
+  // обновляем верхний блок в CannonJS
+  topLayer.cannonjs.position[direction] -= delta / 2;
 
   //заменяем верхний блок меньшим, обрезанным блоком
   const shape = new CANNON.Box(
